@@ -1,3 +1,18 @@
 [submodule "PosteriorSI"]
 	path = PosteriorSI
 	url = https://github.com/PosteriorSI/PosteriorSI.git
+[submodule "CV"]
+	path = CV
+	url = https://github.com/PosteriorSI/CV.git
+[submodule "DSI"]
+	path = DSI
+	url = https://github.com/PosteriorSI/DSI.git
+[submodule "ClockSI"]
+	path = ClockSI
+	url = https://github.com/PosteriorSI/ClockSI.git
+[submodule "OriginSI"]
+	path = OriginSI
+	url = https://github.com/PosteriorSI/OriginSI.git
+[submodule "BaselineSI"]
+	path = BaselineSI
+	url = https://github.com/PosteriorSI/BaselineSI.git
