@@ -1,0 +1,3 @@
+[submodule "PosteriorSI"]
+	path = PosteriorSI
+	url = https://github.com/PosteriorSI/PosteriorSI.git
