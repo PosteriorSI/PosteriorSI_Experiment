@@ -1,0 +1,10 @@
+masterip: 192.168.0.36
+paramport: 8000
+messageport: 8001
+recordport: 8002
+nodenum: 3
+threadnum: 8
+clientport: 10050
+oneweight: 80
+twoweight: 10
+redolimit: 10
