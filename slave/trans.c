@@ -229,7 +229,18 @@ void TransactionRunSchedule(void* args)
         printf("begin LoadData......\n");
         //LoadData();
         //smallbank
-        LoadBankData();
+        //LoadBankData();
+        switch(benchmarkType)
+        {
+        case TPCC:
+      	  LoadData();
+      	  break;
+        case SMALLBANK:
+      	  LoadBankData();
+      	  break;
+        default:
+      	  printf("benchmark not specified\n");
+        }
 
         DataReleaseConnect();
         thread_0_tid=threadinfo->curid;
@@ -251,7 +262,18 @@ void TransactionRunSchedule(void* args)
         printf("begin execute transactions...\n");
         //executeTransactions(transactionsPerTerminal, param->whse_id, param->dist_id, param->StateInfo);
         //smallbank
-        executeTransactionsBank(transactionsPerTerminal, param->StateInfo);
+        //executeTransactionsBank(transactionsPerTerminal, param->StateInfo);
+        switch(benchmarkType)
+        {
+        case TPCC:
+      	  executeTransactions(transactionsPerTerminal, param->whse_id, param->dist_id, param->StateInfo);
+      	  break;
+        case SMALLBANK:
+      	  executeTransactionsBank(transactionsPerTerminal, param->StateInfo);
+      	  break;
+        default:
+      	  printf("benchmark not specified\n");
+        }
         ReleaseConnect();
     }
 }
