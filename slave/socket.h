@@ -3,7 +3,9 @@
 
 #include <pthread.h>
 #include "type.h"
-#define LINEMAX 20
+#include "transactions.h"
+
+#define LINEMAX 100
 #define RECEIVE_BUFFSIZE 8
 #define LISTEN_QUEUE 800
 #define NODENUM nodenum
@@ -33,6 +35,16 @@ extern int oneNodeWeight;
 extern int twoNodeWeight;
 
 extern int redo_limit;
+
+//hotspot control
+extern int HOTSPOT_PERCENTAGE;
+extern int HOTSPOT_FIXED_SIZE;
+
+//duration control
+extern int extension_limit;
+
+//random read control
+extern int random_read_limit;
 
 extern int nodenum;
 extern int threadnum;
