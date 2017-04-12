@@ -1,0 +1,2 @@
+slave: config.c data_am.c local_data_record.c server_data.c state.c data.c data_record.c communicate.c lock.c lock_record.c main.c mem.c proc.c socket.c thread_global.c thread_main.c timestamp.c trans.c transactions.c util.c
+	gcc -o slave config.c communicate.c data.c data_am.c local_data_record.c server_data.c state.c data_record.c lock.c lock_record.c main.c mem.c proc.c socket.c thread_global.c thread_main.c timestamp.c trans.c transactions.c util.c -lpthread
