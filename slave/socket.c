@@ -9,6 +9,7 @@
 #include "socket.h"
 #include "data.h"
 #include "thread_main.h"
+#include "config.h"
 
 void* Respond(void *sockp);
 
